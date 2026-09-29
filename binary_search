@@ -7,12 +7,13 @@ def binary_search(array, search_value):
         value_at_midpoint = array[midpoint]
 
         if search_value == value_at_midpoint:
-            return midpoint
+            return f"The value {value_at_midpoint} is at index {array.index(value_at_midpoint)}"
         elif search_value < value_at_midpoint:
             upper_bound = midpoint - 1
         elif search_value > value_at_midpoint:
             lower_bound = midpoint + 1
     return "Not found in the list!"
 
-print(binary_search([2,4,6,8,10,12,14,16,18,20], 22))
+print(binary_search([2,4,6,8,10,12,14,16,18,20], 16))
 #search_value = 22; Not found in the list!
+#search_value = 16; The value 16 is at index 7

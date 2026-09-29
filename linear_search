@@ -1,13 +1,14 @@
 #!/bin/python
 
 def linear_search(array, search_value):
+    index = 0
     for everyitem in array:
         if everyitem == search_value:
-            return array.index(everyitem)
-        elif everyitem > search_value:
-            break
+             return f"The value {everyitem} is at {index}"
+        index += 1
     return "Not found in the list!"
 
-print(linear_search([2,3,4,52,12,14,33,42,15,98,54,3], 24))
-# search_value = 24; Not found in the list!
+print(linear_search([2,3,4,52,12,14,33,42,15,98,54,3], 15))
+#search_value = 24; Not found in the list!
+#search_value = 15; The value 15 is at index 8
 
