@@ -76,5 +76,6 @@ Let's say we are searching for the value **33**, and **it is not** there, you ha
 search on an array of size 100,000?
 
 - Answer:
- - It would take 17 steps to perform a binary search on an array of size 100,000.
+ - It would take 17 steps to perform a binary search on an array of size 100,000. N.B: For a binary search, the steps increase by 1 for every time the size doubles and crosses a power of 2, e.g 2 = 1 step, 4 = 2 steps, 8 = 3 steps, e.t.c
+
 
